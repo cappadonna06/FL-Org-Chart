@@ -117,13 +117,13 @@ export const OrgChart: React.FC = () => {
 
   const currentStateData: OrgNode = {
     title: "Frontline Organization",
-    headcount: "≈78 FTE",
+    headcount: "≈99 FTE",
     manager: { name: "Harry Statter", title: "CEO" },
     defaultOpen: true,
     children: [
       {
         title: "COO Operations",
-        headcount: "≈66 FTE",
+        headcount: "77",
         manager: { name: "Chris Lippincott", title: "COO" },
         defaultOpen: true,
         children: [
@@ -173,44 +173,47 @@ export const OrgChart: React.FC = () => {
           },
           {
             title: "Product & Technology",
-            headcount: "8",
-            manager: { name: "Marc Sells", title: "Head" },
+            headcount: "7",
+            manager: { name: "Marc Sells", title: "VP of Product" },
             people: [
               { name: "Chris Coté", title: "Head of Software" },
-              { name: "Clinton Murphy", title: "Senior Product Manager, Software" },
-              { name: "David Cao", title: "Head of Hardware Engineering" },
+              { name: "Clinton Murphy", title: "Senior Product Manager, Mobile App" },
+              { name: "David Cao", title: "Hardware Systems Engineering Manager" },
               { name: "Robert Villegas", title: "Electro-Mechanical Engineer" },
-              { name: "TBH", title: "Firmware Lead" },
-              { name: "TBH", title: "Full Stack Software Engineer" },
-              { name: "TBH", title: "Director of Wildfire Data & Platform" }
+              { name: "Jake Rose", title: "Director of GIS, Wildfire Data & Intelligence" },
+              { name: "Nathan Whittington", title: "Firmware Lead" }
             ]
           },
           {
             title: "Operations",
-            headcount: "≈46",
+            headcount: "50",
             children: [
               {
-                title: "Project Managers",
-                headcount: "10",
+                title: "Project Management & Field Services",
+                headcount: "14",
+                manager: { name: "Michael Neckel", title: "Director of Project Management and Field Services" },
                 children: [
                   {
                     title: "Senior PMs & Ops Management",
-                    headcount: "3",
+                    headcount: "5",
                     people: [
                       { name: "Bobby Cahalan", title: "Sr. PM" },
                       { name: "Marcus Delap", title: "Sr. PM New Construction / Channel" },
+                      { name: "Jessica Hernandez", title: "Sr. PM" },
+                      { name: "Thanh Nguyen", title: "Sr. PM" },
                       { name: "Wendy Jefferson", title: "Program Manager" }
                     ]
                   },
                   {
                     title: "Project Managers",
-                    headcount: "6",
+                    headcount: "7",
                     people: [
                       { name: "Aaron Arreola" },
                       { name: "Wes Christensen" },
                       { name: "Anthony Hill" },
+                      { name: "Donovan Hyde" },
                       { name: "Claire Matranga" },
-                      { name: "Michael Neckel", title: "Director of PM and Field Services" },
+                      { name: "Drew Nguyen" },
                       { name: "Morgan Saccoman" }
                     ]
                   },
@@ -232,46 +235,67 @@ export const OrgChart: React.FC = () => {
                 ]
               },
               {
-                title: "Pre-Install Design Desk",
-                headcount: "6",
-                manager: { name: "Jacob Moore", title: "Manager" },
+                title: "Design",
+                headcount: "5",
                 people: [
-                  { name: "Kathleen Dempsey", title: "Sr." },
-                  { name: "Janelle Gardetto" },
-                  { name: "Emily Poppen" },
-                  { name: "Matthew Sexton" },
-                  { name: "Carmen Saunders" }
+                  { name: "Kathleen Dempsey", title: "Senior System Designer" },
+                  { name: "Janelle Gardetto", title: "System Designer" },
+                  { name: "Emily Poppen", title: "System Designer" },
+                  { name: "Matthew Sexton", title: "System Designer" },
+                  { name: "Carmen Saunders", title: "System Designer" }
                 ]
               },
               {
-                title: "Foremen",
-                headcount: "3",
-                people: [
-                  { name: "Raymond Arreola" },
-                  { name: "Joseph Caliguire" },
-                  { name: "Dylan Moore" }
+                title: "Installation Services",
+                headcount: "24",
+                manager: { name: "Woody Warren", title: "Director of Installation" },
+                children: [
+                  {
+                    title: "Foremen",
+                    headcount: "3",
+                    people: [
+                      { name: "Raymond Arreola" },
+                      { name: "Joseph Caliguire" },
+                      { name: "Dylan Moore" }
+                    ]
+                  },
+                  {
+                    title: "Field Technicians",
+                    headcount: "20",
+                    people: [
+                      { name: "Ian Caliguire", title: "Superintendent" },
+                      { name: "Zack Almond" },
+                      { name: "Joshua Arreola" },
+                      { name: "Mark Axe" },
+                      { name: "Joshua Cannan" },
+                      { name: "Ricky Cortes" },
+                      { name: "Daniel Current" },
+                      { name: "Javier Flores" },
+                      { name: "Kenneth Gant" },
+                      { name: "Colton Lorenz" },
+                      { name: "Mario Luna" },
+                      { name: "Daniel Malek" },
+                      { name: "Jon Marks" },
+                      { name: "Cesar Miramontes" },
+                      { name: "Manny Moralestorres" },
+                      { name: "Dylan Ochoa" },
+                      { name: "Jose Ramos-Martinez" },
+                      { name: "Christian Ritter" },
+                      { name: "Reginald Scott" },
+                      { name: "Michael Tomasin" }
+                    ]
+                  }
                 ]
               },
               {
-                title: "Field Technicians",
-                headcount: "16",
+                title: "Cross Functional Support",
+                headcount: "5",
+                manager: { name: "Carolyn Winters", title: "Sales Operations Manager" },
                 people: [
-                  { name: "Ian Caliguire", title: "Superintendent" },
-                  { name: "Zack Almond" },
-                  { name: "Joshua Arreola" },
-                  { name: "Mark Axe" },
-                  { name: "Joshua Cannan" },
-                  { name: "Ricky Cortes" },
-                  { name: "Daniel Current" },
-                  { name: "Javier Flores" },
-                  { name: "Kenneth Gant" },
-                  { name: "Colton Lorenz" },
-                  { name: "Mario Luna" },
-                  { name: "Jon Marks" },
-                  { name: "Manny Moralestorres" },
-                  { name: "Dylan Ochoa" },
-                  { name: "Christian Ritter" },
-                  { name: "Reginald Scott" }
+                  { name: "Jacob Moore", title: "Senior Solutions Engineer" },
+                  { name: "Bryan Silva", title: "Sales Operations Analyst" },
+                  { name: "Silas Lopes", title: "Sales Development Representative" },
+                  { name: "Nicholas Nikolopoulous", title: "Sales Development Representative" }
                 ]
               }
             ]
@@ -291,32 +315,39 @@ export const OrgChart: React.FC = () => {
       },
       {
         title: "BizOps & G&A",
-        headcount: "7",
+        headcount: "14",
         manager: { name: "Jaclyn Hearne", title: "VP of Business Operations" },
         children: [
           {
             title: "Finance",
-            headcount: "4",
+            headcount: "7",
             people: [
-              { name: "Shyla Villalba-Mercado", title: "Billing Specialist" },
-              { name: "Bryan Silva", title: "Sales Operations Analyst" },
+              { name: "Christi Baron", title: "Sr. Revenue Manager" },
+              { name: "Brad Cooke", title: "Sr. Financial Analyst" },
+              { name: "Jacqueline Figueroa", title: "Construction Accountant" },
+              { name: "Iryna Paluyan", title: "Sr. Accountant" },
+              { name: "Tameka Perkins", title: "Payroll Manager" },
               { name: "Bill Shields", title: "Sr. Project Accountant" },
-              { name: "Iryna Paluyan", title: "Sr. Accountant" }
+              { name: "Shyla Villalba-Mercado", title: "Billing Specialist" }
             ]
           },
           {
-            title: "Contracts",
-            headcount: "1",
+            title: "Legal & Contracts",
+            headcount: "2",
             people: [
+              { name: "Michelle Middleton", title: "General Counsel" },
               { name: "Michelle Scheerer", title: "Contract Administrator" }
             ]
           },
           {
-            title: "HR",
-            headcount: "2",
+            title: "People & Talent Acquisition",
+            headcount: "5",
             people: [
+              { name: "Jeff Halligan", title: "Talent Acquisition Manager" },
               { name: "Jackie Hemlock", title: "Sr. Talent Acquisition Specialist" },
-              { name: "Lori Wheeler", title: "Payroll and People Ops Specialist" }
+              { name: "Yuree Huh", title: "Talent Acquisition Coordinator" },
+              { name: "Ashley Khteian", title: "Talent Acquisition Specialist" },
+              { name: "Lori Wheeler", title: "Payroll and People Operations Specialist" }
             ]
           }
         ]
@@ -753,7 +784,7 @@ export const OrgChart: React.FC = () => {
             variant={!showFutureState ? "default" : "outline"}
             onClick={() => setShowFutureState(false)}
           >
-            Current State - August 2025 (≈80 FTE)
+            Current State (≈99 FTE)
           </Button>
           <Button
             variant={showFutureState ? "default" : "outline"}
@@ -763,7 +794,7 @@ export const OrgChart: React.FC = () => {
           </Button>
         </div>
         <h1 className="text-2xl font-bold text-center mb-2">
-          {showFutureState ? "Frontline Proposed Future-State Organization" : "Frontline Current-State Organization (August 2025)"}
+          {showFutureState ? "Frontline Proposed Future-State Organization" : "Frontline Current-State Organization"}
         </h1>
         <p className="text-center text-gray-600">
           Click on any section to expand or collapse details
