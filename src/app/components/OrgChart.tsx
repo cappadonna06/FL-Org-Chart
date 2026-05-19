@@ -117,15 +117,10 @@ export const OrgChart: React.FC = () => {
 
   const currentStateData: OrgNode = {
     title: "Frontline Organization",
-    headcount: "≈80 FTE",
+    headcount: "≈78 FTE",
     manager: { name: "Harry Statter", title: "CEO" },
     defaultOpen: true,
     children: [
-      {
-        title: "Policy",
-        headcount: "1",
-        manager: { name: "Amanda Parsons", title: "Head of Policy" }
-      },
       {
         title: "COO Operations",
         headcount: "≈66 FTE",
@@ -134,31 +129,44 @@ export const OrgChart: React.FC = () => {
         children: [
           {
             title: "Sales",
-            headcount: "≈13",
+            headcount: "20",
             children: [
               {
                 title: "Directors",
                 headcount: "4",
                 people: [
-                  { name: "Richard Hart", title: "New Construction" },
-                  { name: "Doug Jakobsen", title: "Channel Development" },
-                  { name: "Jordan Wolff", title: "Production Homes Sales (Channel)" },
-                  { name: "Grey Bailey", title: "Commercial and Industrial (C&I) Sales (Channel)" }
+                  { name: "Richard Hart", title: "Director of New Construction" },
+                  { name: "Doug Jakobsen", title: "Director of Channel Development" },
+                  { name: "Jordan Wolff", title: "Director of Sales, Production Homes and Communities" },
+                  { name: "Grey Bailey", title: "Director of Sales, Commercial and Industrial" }
                 ]
               },
               {
                 title: "Territory Managers",
-                headcount: "9",
+                headcount: "15",
                 people: [
                   { name: "Keith Coburn" },
-                  { name: "Phillip Crum" },
+                  { name: "Will Collins" },
                   { name: "Thomas Farmer" },
                   { name: "Sean Kennedy" },
+                  { name: "Kelli Kingsborough" },
                   { name: "Michael Martinez" },
+                  { name: "Calvin Olbes" },
+                  { name: "Gerard Pallotta" },
+                  { name: "Kon Phiri" },
                   { name: "Alex Radas" },
+                  { name: "Todd Robertson" },
                   { name: "Clint Sales" },
+                  { name: "Brad Van Wert" },
                   { name: "Mark Wendel" },
-                  { name: "Calvin Olbes" }
+                  { name: "Nate Wilson" }
+                ]
+              },
+              {
+                title: "Business Development",
+                headcount: "1",
+                people: [
+                  { name: "Chris Weil", title: "BDR (reports to Doug Jakobsen)" }
                 ]
               }
             ]
@@ -183,36 +191,34 @@ export const OrgChart: React.FC = () => {
             children: [
               {
                 title: "Project Managers",
-                headcount: "13",
+                headcount: "10",
                 children: [
                   {
                     title: "Senior PMs & Ops Management",
                     headcount: "3",
                     people: [
                       { name: "Bobby Cahalan", title: "Sr. PM" },
-                      { name: "Marcus Delap", title: "Sr. PM" },
-                      { name: "Wendy Jefferson", title: "Ops Mgmt" }
+                      { name: "Marcus Delap", title: "Sr. PM New Construction / Channel" },
+                      { name: "Wendy Jefferson", title: "Program Manager" }
                     ]
                   },
                   {
                     title: "Project Managers",
-                    headcount: "9",
+                    headcount: "6",
                     people: [
                       { name: "Aaron Arreola" },
                       { name: "Wes Christensen" },
                       { name: "Anthony Hill" },
-                      { name: "Kaison Lavicka" },
                       { name: "Claire Matranga" },
-                      { name: "Michael Neckel" },
-                      { name: "Morgan Saccoman" },
-                      { name: "Ben Zieff" }
+                      { name: "Michael Neckel", title: "Director of PM and Field Services" },
+                      { name: "Morgan Saccoman" }
                     ]
                   },
                   {
                     title: "Coordinator",
                     headcount: "1",
                     people: [
-                      { name: "Owen Christiaansen", title: "Coordinator" }
+                      { name: "Owen Christiaansen", title: "Project Coordinator" }
                     ]
                   }
                 ]
@@ -220,9 +226,9 @@ export const OrgChart: React.FC = () => {
               {
                 title: "Supply Chain",
                 headcount: "2",
-                manager: { name: "John Moran", title: "Head" },
+                manager: { name: "John Moran", title: "Strategic Sourcing and Supply Chain Lead" },
                 people: [
-                  { name: "Priscilla Deal", title: "Procurement" }
+                  { name: "Priscilla Barrett", title: "Procurement Specialist" }
                 ]
               },
               {
@@ -239,9 +245,8 @@ export const OrgChart: React.FC = () => {
               },
               {
                 title: "Foremen",
-                headcount: "4",
+                headcount: "3",
                 people: [
-                  { name: "Alex Alvarado" },
                   { name: "Raymond Arreola" },
                   { name: "Joseph Caliguire" },
                   { name: "Dylan Moore" }
@@ -249,31 +254,24 @@ export const OrgChart: React.FC = () => {
               },
               {
                 title: "Field Technicians",
-                headcount: "20+",
+                headcount: "16",
                 people: [
                   { name: "Ian Caliguire", title: "Superintendent" },
                   { name: "Zack Almond" },
-                  { name: "Daniel Alonso" },
                   { name: "Joshua Arreola" },
                   { name: "Mark Axe" },
-                  { name: "Michael Bossert" },
                   { name: "Joshua Cannan" },
+                  { name: "Ricky Cortes" },
                   { name: "Daniel Current" },
                   { name: "Javier Flores" },
                   { name: "Kenneth Gant" },
-                  { name: "Isaiah Holmes" },
-                  { name: "Devin Howard" },
                   { name: "Colton Lorenz" },
                   { name: "Mario Luna" },
                   { name: "Jon Marks" },
-                  { name: "Beto Martinez" },
-                  { name: "Jake Matson" },
-                  { name: "Manuel Morales" },
+                  { name: "Manny Moralestorres" },
                   { name: "Dylan Ochoa" },
                   { name: "Christian Ritter" },
-                  { name: "Reginald Scott" },
-                  { name: "Ramon Vallarta" },
-                  { name: "Ricky Cortes" }
+                  { name: "Reginald Scott" }
                 ]
               }
             ]
@@ -282,26 +280,26 @@ export const OrgChart: React.FC = () => {
       },
       {
         title: "Marketing",
-        headcount: "3",
-        manager: { name: "TBD", title: "Head" },
+        headcount: "5",
+        manager: { name: "Patrick Feehery", title: "VP of Marketing" },
         people: [
-          { name: "Desiree Finigan", title: "Events & Partnerships" },
-          { name: "Jennifer Monarez", title: "SDR" }
+          { name: "Todd Bischoff", title: "Creative Director" },
+          { name: "Nickolas Blankenship", title: "Director of Growth Marketing" },
+          { name: "Allison Murray", title: "Sr. Manager of Content and Communication" },
+          { name: "Desirée Finigan", title: "Events & Partnerships Manager" }
         ]
       },
       {
         title: "BizOps & G&A",
-        headcount: "9",
-        manager: { name: "Jaclyn Hearne", title: "Director" },
+        headcount: "7",
+        manager: { name: "Jaclyn Hearne", title: "VP of Business Operations" },
         children: [
           {
             title: "Finance",
-            headcount: "6",
+            headcount: "4",
             people: [
-              { name: "Rukudzo Chawora", title: "Controller" },
-              { name: "Shyla Cuadras", title: "Billing" },
-              { name: "Bridget Ross", title: "Staff Accountant" },
-              { name: "Bryan Silva", title: "FP&A" },
+              { name: "Shyla Villalba-Mercado", title: "Billing Specialist" },
+              { name: "Bryan Silva", title: "Sales Operations Analyst" },
               { name: "Bill Shields", title: "Sr. Project Accountant" },
               { name: "Iryna Paluyan", title: "Sr. Accountant" }
             ]
@@ -310,15 +308,15 @@ export const OrgChart: React.FC = () => {
             title: "Contracts",
             headcount: "1",
             people: [
-              { name: "Michelle Scheerer" }
+              { name: "Michelle Scheerer", title: "Contract Administrator" }
             ]
           },
           {
             title: "HR",
             headcount: "2",
             people: [
-              { name: "Jackie Hemlock", title: "TA" },
-              { name: "Lori Wheeler", title: "TA" }
+              { name: "Jackie Hemlock", title: "Sr. Talent Acquisition Specialist" },
+              { name: "Lori Wheeler", title: "Payroll and People Ops Specialist" }
             ]
           }
         ]
